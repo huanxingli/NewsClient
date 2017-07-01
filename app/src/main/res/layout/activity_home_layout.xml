@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaomomo.activity.HomeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_layout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabs_layout"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/home_layout_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/main_tab_home"
+                android:id="@+id/home_image_view"
+                />
+            <TextView
+                android:id="@+id/home_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_home_name"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/home_image_view"
+                android:textColor="@color/tab_item"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/message_layout_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/main_tab_message"
+                android:id="@+id/message_image_view"
+                />
+            <TextView
+                android:id="@+id/message_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_message_name"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/message_image_view"
+                android:textColor="@color/tab_item"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/me_layout_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/main_tab_message"
+                android:id="@+id/me_image_view"
+                />
+            <TextView
+                android:id="@+id/me_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_me_name"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/me_image_view"
+                android:textColor="@color/tab_item"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tab_item"
+        android:layout_above="@+id/tabs_layout"/>
+
+
+</RelativeLayout>
