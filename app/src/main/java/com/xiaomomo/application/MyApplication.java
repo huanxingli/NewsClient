@@ -1,4 +1,4 @@
-package com.xiaomomo;
+package com.xiaomomo.application;
 
 import android.app.Application;
 
